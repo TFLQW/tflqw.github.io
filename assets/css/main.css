@@ -2007,7 +2007,7 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			top: 0;
-			padding: 2em 0 0 2em;
+			padding: 0.6em 0 0 0.6em;
 		}
 
 			ul.special li a {
@@ -2022,11 +2022,11 @@ input, select, textarea {
 					transition: background-color .2s ease-in-out;
 					display: block;
 					text-align: center;
-					background: #c1cac5;
+					background: #03558b;
 					border-radius: 100%;
-					width: 2.25em;
-					height: 2.25em;
-					line-height: 2.175em;
+					width: 0.6em;
+					height: 0.6em;
+					line-height: 1.175em;
 					font-size: 5em;
 					color: #fff;
 				}
@@ -2036,7 +2036,7 @@ input, select, textarea {
 			}
 
 				ul.special li:hover a:before {
-					background: #b9d2ce;
+					background: #5da1c9;
 				}
 
 /* Meta */
@@ -2325,11 +2325,11 @@ input, select, textarea {
 				position: relative;
 				display: inline-block;
 				padding: 0 1.5em 0 1.5em;
-				top: -0.65em;
+				top: -1.5em;
 			}
 
 			#header .logo h1 {
-				display: inline;
+				display: inline-block;
 			}
 
 			#header .logo p {
@@ -2340,19 +2340,19 @@ input, select, textarea {
 /* Nav */
 
 	body {
-		padding-top: 3.25em;
+		padding-top: 0em;
 	}
 
 	#nav {
-		position: fixed;
-		top: 0;
+		position: absolute;
+		top: 9em;
 		left: 0;
 		z-index: 1000;
 		background-color: rgba(255, 255, 255, 0.95);
 		background-image: url("images/overlay.png");
 		width: 100%;
-		height: 3.25em;
-		line-height: 3.25em;
+		height: 2em;
+		line-height: 2em;
 		text-align: center;
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-weight: 700;
@@ -2392,6 +2392,8 @@ input, select, textarea {
 				color: #6b7770;
 				top: -6px;
 				padding: 6px 1.5em 0.25em 1.5em;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
 				border-bottom-left-radius: 6px;
 				border-bottom-right-radius: 6px;
 				outline: 0;
@@ -2412,7 +2414,7 @@ input, select, textarea {
 			}
 
 			#nav li.current a {
-				background: #b1ddab;
+				background: #8cd0eb;
 				color: #fff;
 			}
 
@@ -2540,7 +2542,9 @@ input, select, textarea {
 
 	#main {
 		background: #fff;
-		border-top: solid 5px #b1ddab;
+		position: relative;
+		top: -0.7em;
+		border-top: solid 5px #8cd0eb;
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 35px;
 		border-bottom-width: 10px;

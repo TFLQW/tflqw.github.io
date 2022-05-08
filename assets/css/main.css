@@ -2344,8 +2344,8 @@ input, select, textarea {
 	}
 
 	#nav {
-		position: absolute;
-		top: 9em;
+		position: relative;
+		top: -3em;
 		left: 0;
 		z-index: 1000;
 		background-color: rgba(255, 255, 255, 0.95);
@@ -2543,7 +2543,7 @@ input, select, textarea {
 	#main {
 		background: #fff;
 		position: relative;
-		top: -0.7em;
+		top: -1.5em;
 		border-top: solid 5px #8cd0eb;
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 35px;

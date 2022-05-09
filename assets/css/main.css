@@ -87,7 +87,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f2f5f3;
+		background: #f2f4f5;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2274,7 +2274,11 @@ input, select, textarea {
 
 	.box.feature {
 		text-align: center;
+		line-height: normal;
 	}
+		.box.box.feature h3{
+			margin-top: -1em;
+		}
 
 	.box.post header {
 		margin: 0 0 2.5em 0;

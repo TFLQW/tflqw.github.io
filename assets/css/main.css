@@ -608,13 +608,13 @@ input, select, textarea {
 					width: 50%;
 				}
 
-				.row > .off-6-xlarge {
+				/* .row > .off-6-xlarge {
 					margin-left: 50%;
 				}
 				.row > .off-6-left-xlarge, .row > .off-6-right-xlarge {
 					width: 50%;
 					float: left;
-				}
+				} */
 				.row > .col-7-xlarge {
 					width: 58.33333%;
 				}
@@ -856,13 +856,13 @@ input, select, textarea {
 					width: 50%;
 				}
 
-				.row > .off-6-large {
+				/* .row > .off-6-large {
 					margin-left: 50%;
 				}
 				.row > .off-6-left-large, .row > .off-6-right-large {
 					width: 50%;
 					float: left;
-				}
+				} */
 				.row > .col-7-large {
 					width: 58.33333%;
 				}
@@ -1108,7 +1108,7 @@ input, select, textarea {
 					margin-left: 50%;
 				}
 				.row > .off-6-left-medium, .row > .off-6-right-medium {
-					width: 25%;
+					width: 50%;
 					float: left;
 				}
 				.row > .col-7-medium {

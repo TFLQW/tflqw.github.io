@@ -3118,6 +3118,14 @@ input, select, textarea {
 			.box.intro header > p {
 				font-size: 1.25em;
 			}
+			.box.icon h2 {
+				font-size: 2em;
+			}
+
+			.box.icon header > p {
+				font-size: 1.25em;
+			}
+
 			.box.post h3 {
 				font-size: 2em;
 			}

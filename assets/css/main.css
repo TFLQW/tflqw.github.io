@@ -335,6 +335,25 @@ input, select, textarea {
 		.row > .col-3 {
 			width: 25%;
 		}
+		.row > .col-3-left {
+			width: 30%;
+			/* float: none; */
+		}
+		.row > .col-3-right {
+			width: 20%;
+			/* float: none; */
+		}
+		.row > .col-3-mid{
+			width: 50%;
+		}
+		.row > .col-2-left {
+			width: 20%;
+			/* float: none; */
+		}
+		.row > .col-2-right {
+			width: 70%;
+			/* float: none; */
+		}
 
 		.row > .off-3 {
 			margin-left: 25%;
@@ -1779,7 +1798,7 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: url("images/overlay.png");
+			/* background: url("images/overlay.png"); */
 			opacity: 0.6;
 			border-radius: 8px;
 		}
@@ -1798,6 +1817,10 @@ input, select, textarea {
 			display: block;
 			width: 45%;
 			margin: 4em auto;
+		}
+		.image.school {
+			max-width: 50%;
+			max-height: 50%;	
 		}
 		.image.left {
 			float: left;
@@ -2364,7 +2387,6 @@ input, select, textarea {
 		}
 
 /* Page Wrapper */
-
 	#page-wrapper > section {
 		margin-bottom: 0;
 	}
@@ -2379,7 +2401,8 @@ input, select, textarea {
 		text-transform: uppercase;
 		padding: 2em 0;
 		background: #fff;
-		margin: 0 auto;
+		/* margin: 1em auto; */
+		margin-bottom: -2.5em;
 	}
 
 		#header .logo {
@@ -2414,7 +2437,7 @@ input, select, textarea {
 
 	#nav {
 		position: relative;
-		top: -5em;
+		top: 0em;
 		left: 0;
 		z-index: 1000;
 		background-color: rgba(255, 255, 255, 0.95);
@@ -2612,7 +2635,7 @@ input, select, textarea {
 	#main {
 		background: #fff;
 		position: relative;
-		top: -6em;
+		top: 0em;
 		border-top: solid 20px #8cd0eb;  /*8cd0eb */
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 40px;
@@ -2654,7 +2677,7 @@ input, select, textarea {
 
 	#copyright {
 		display: inline-block;
-		background: #e7eae8;
+		background: hsl(140, 7%, 91%);
 		padding: 0.75em 2em 0.75em 2em;
 		border-radius: 8px;
 		color: #8b9790;

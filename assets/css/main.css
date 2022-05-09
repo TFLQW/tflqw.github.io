@@ -611,7 +611,10 @@ input, select, textarea {
 				.row > .off-6-xlarge {
 					margin-left: 50%;
 				}
-
+				.row > .off-6-left-xlarge, .row > .off-6-right-xlarge {
+					width: 50%;
+					float: left;
+				}
 				.row > .col-7-xlarge {
 					width: 58.33333%;
 				}
@@ -856,7 +859,10 @@ input, select, textarea {
 				.row > .off-6-large {
 					margin-left: 50%;
 				}
-
+				.row > .off-6-left-large, .row > .off-6-right-large {
+					width: 50%;
+					float: left;
+				}
 				.row > .col-7-large {
 					width: 58.33333%;
 				}
@@ -1101,7 +1107,10 @@ input, select, textarea {
 				.row > .off-6-medium {
 					margin-left: 50%;
 				}
-
+				.row > .off-6-left-medium, .row > .off-6-right-medium {
+					width: 50%;
+					float: left;
+				}
 				.row > .col-7-medium {
 					width: 58.33333%;
 				}
@@ -1346,7 +1355,10 @@ input, select, textarea {
 				.row > .off-6-small {
 					margin-left: 50%;
 				}
-
+				.row > .off-6-left-small, .row > .off-6-right-small {
+					width: 50%;
+					float: left;
+				}
 				.row > .col-7-small {
 					width: 58.33333%;
 				}
@@ -1591,7 +1603,10 @@ input, select, textarea {
 				.row > .off-6-xsmall {
 					margin-left: 50%;
 				}
-
+				.row > .off-6-left-xsmall, .row > .off-6-right-xsmall {
+					width: 50%;
+					float: left;
+				}
 				.row > .col-7-xsmall {
 					width: 58.33333%;
 				}

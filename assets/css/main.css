@@ -33,6 +33,10 @@ body {
 	line-height: 1;
 }
 
+a:hover, a:focus, a:active, a:visited, a:link{
+    text-decoration: none;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -215,7 +219,7 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		margin: 0em auto;
 		max-width: 100%;
 		width: 64em;
 	}
@@ -260,6 +264,13 @@ input, select, textarea {
 
 		}
 
+/* Column */
+	.column {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+	}
 /* Row */
 
 	.row {
@@ -351,6 +362,11 @@ input, select, textarea {
 
 		.row > .off-6 {
 			margin-left: 50%;
+		}
+
+		.row > .off-6-left, .row > .off-6-right {
+			width: 50%;
+			float: left;
 		}
 
 		.row > .col-7 {
@@ -1750,6 +1766,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background: url("images/overlay.png");
+			opacity: 0.6;
 			border-radius: 8px;
 		}
 
@@ -1763,7 +1780,11 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
-
+		.image.face {
+			display: block;
+			width: 45%;
+			margin: 4em auto;
+		}
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
@@ -2007,36 +2028,38 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			top: 0;
-			padding: 0.6em 0 0 0.6em;
+			padding: 0.1em 0 0 0.1em;
+			text-align: center;
 		}
 
 			ul.special li a {
-				display: block;
+				/* display: block; */
 				outline: 0;
 			}
 
 				ul.special li a:before {
-					-moz-transition: background-color .2s ease-in-out;
-					-webkit-transition: background-color .2s ease-in-out;
-					-ms-transition: background-color .2s ease-in-out;
-					transition: background-color .2s ease-in-out;
+					/* -moz-transition: background-color .15s ease-in-out;
+					-webkit-transition: background-color .15s ease-in-out;
+					-ms-transition: background-color .15s ease-in-out; */
+					transition: background-color .15s ease-in-out;
 					display: block;
-					text-align: center;
-					background: #03558b;
+					/* text-align: center; */
+					/* background: #5da1c9; */
 					border-radius: 100%;
-					width: 0.6em;
-					height: 0.6em;
-					line-height: 1.175em;
-					font-size: 5em;
-					color: #fff;
+					width: 1.6em;
+					height: 1.6em;
+					line-height: 160%;
+					text-decoration: none;
+					color: #035083;
 				}
 
 			ul.special li:hover {
-				top: -1em;
+				top: -0.4em;
 			}
 
 				ul.special li:hover a:before {
-					background: #5da1c9;
+					background: #035083;
+					color: #fff;
 				}
 
 /* Meta */
@@ -2194,7 +2217,7 @@ input, select, textarea {
 /* Box */
 
 	.box.highlight {
-		text-align: center;
+		text-align: right;
 	}
 
 		.box.highlight h2 {
@@ -2203,6 +2226,34 @@ input, select, textarea {
 		}
 
 		.box.highlight header > p {
+			font-size: 1.65em;
+			margin: 0 0 1.5em 0;
+		}
+
+	.box.intro {
+		text-align: justify;
+		margin-top: 3em;
+	}
+
+		.box.intro h2 {
+			font-size: 3em;
+			margin: 0 0 0.25em 0;
+		}
+
+		.box.intro header > p {
+			font-size: 1.65em;
+			margin: 0 0 1.5em 0;
+		}
+	.box.icon {
+		text-align: right;
+	}
+
+		.box.box.icon h2 {
+			font-size: 3em;
+			margin: 0 0 0.25em 0;
+		}
+
+		.box.icon header > p {
 			font-size: 1.65em;
 			margin: 0 0 1.5em 0;
 		}
@@ -2345,7 +2396,7 @@ input, select, textarea {
 
 	#nav {
 		position: relative;
-		top: -3em;
+		top: -5em;
 		left: 0;
 		z-index: 1000;
 		background-color: rgba(255, 255, 255, 0.95);
@@ -2543,12 +2594,12 @@ input, select, textarea {
 	#main {
 		background: #fff;
 		position: relative;
-		top: -1.5em;
-		border-top: solid 5px #8cd0eb;
+		top: -6em;
+		border-top: solid 20px #8cd0eb;  /*8cd0eb */
 		border-bottom: solid 5px #c1cac5;
-		border-top-width: 35px;
+		border-top-width: 40px;
 		border-bottom-width: 10px;
-		padding: 6em 0 6em 0;
+		padding: 3em 0 3em 0;
 	}
 
 /* Sidebar + Content */
@@ -2642,6 +2693,20 @@ input, select, textarea {
 			}
 
 			.box.highlight header > p {
+				font-size: 1.25em;
+			}
+			.box.intro h2 {
+				font-size: 2.5em;
+			}
+
+			.box.intro header > p {
+				font-size: 1.25em;
+			}
+			.box.icon h2 {
+				font-size: 2.5em;
+			}
+
+			.box.icon header > p {
 				font-size: 1.25em;
 			}
 
@@ -3032,7 +3097,13 @@ input, select, textarea {
 			.box.highlight header > p {
 				font-size: 1.25em;
 			}
+			.box.intro h2 {
+				font-size: 2em;
+			}
 
+			.box.intro header > p {
+				font-size: 1.25em;
+			}
 			.box.post h3 {
 				font-size: 2em;
 			}

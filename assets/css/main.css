@@ -2063,7 +2063,7 @@ input, select, textarea {
 					width: 1.6em;
 					height: 1.6em;
 					line-height: 160%;
-					text-decoration: none;
+					/* text-decoration: none; */
 					color: #035083;
 				}
 
@@ -2697,7 +2697,7 @@ input, select, textarea {
 		/* Special */
 
 			ul.special li a:before {
-				font-size: 60px;
+				font-size: 28px;
 			}
 
 		/* Box */
@@ -2759,7 +2759,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				border-top-width: 20px;
+				border-top-width: 30px;
 				border-bottom-width: 10px;
 			}
 
@@ -3106,6 +3106,10 @@ input, select, textarea {
 
 			.box.highlight h2 {
 				font-size: 2em;
+				text-align: center;
+			}
+			.box.highlight h3 {
+				text-align: center;
 			}
 
 			.box.highlight header > p {
@@ -3117,6 +3121,9 @@ input, select, textarea {
 
 			.box.intro header > p {
 				font-size: 1.25em;
+			}
+			.box.icon {
+				text-align: center;
 			}
 			.box.icon h2 {
 				font-size: 2em;
@@ -3163,6 +3170,8 @@ input, select, textarea {
 		/* Main */
 
 			#main {
+				position: relative;
+				top: 0em;
 				padding: 3em 0;
 			}
 

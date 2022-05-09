@@ -2860,7 +2860,8 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background-color: rgba(21, 38, 23, 0.8);
+				/* background-color: rgba(21, 38, 23, 0.8); */
+				background-color: rgba(9, 60, 128, 0.8);
 				background-image: url("images/overlay.png");
 			}
 
@@ -2906,7 +2907,8 @@ input, select, textarea {
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #b1ddab;
+						/* background: #b1ddab; */
+						background: #7fb3f0;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
@@ -2917,7 +2919,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #a1cd9b;
+						background-color: #7fb3f0;
 					}
 
 			#navPanel {

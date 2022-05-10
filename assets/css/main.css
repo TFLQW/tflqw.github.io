@@ -104,7 +104,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
-		color: #6b7770;
+		color: #5d6862;
 		font-size: 13pt;
 		line-height: 2em;
 	}
@@ -352,6 +352,28 @@ input, select, textarea {
 		}
 		.row > .col-2-right {
 			width: 70%;
+			/* float: none; */
+		}
+
+		.row > .col-rob-left {
+			width: 50%;
+			/* float: none; */
+		}
+		.row > .col-rob-right {
+			width: 50%;
+			/* float: none; */
+		}
+
+		.row > .col-lang-left {
+			width: 33%;
+			/* float: none; */
+		}
+		.row > .col-lang-mid {
+			width: 33%;
+			/* float: none; */
+		}
+		.row > .col-lang-right {
+			width: 33%;
 			/* float: none; */
 		}
 

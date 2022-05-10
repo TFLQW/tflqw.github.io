@@ -355,6 +355,15 @@ input, select, textarea {
 			/* float: none; */
 		}
 
+		.row > .col-pub-left {
+			width: 70%;
+			/* float: none; */
+		}
+		.row > .col-pub-right {
+			width: 30%;
+			/* float: none; */
+		}
+
 		.row > .col-rob-left {
 			width: 50%;
 			/* float: none; */

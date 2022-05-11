@@ -1,1 +1,10 @@
 theme: jekyll-theme-minimal
+
+1urlforgoogle: https://tflqw.github.io/
+2
+3# 自动生成sitemap
+4sitemap:
+5  path: sitemap.xml
+6baidusitemap:
+7  path: baidusitemap.xml
+

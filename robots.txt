@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tflqw.github.io/sitemap.xml

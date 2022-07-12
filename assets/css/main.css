@@ -3271,3 +3271,15 @@ input, select, textarea {
 			}
 
 	}
+/* add the link animation change the color */
+	.test {
+		color: #555c5e; 
+		font-weight: bold; 
+		text-decoration: none;
+	}
+	
+	.test:hover {
+		color: #25a7e4;
+		font-weight: bold;
+		text-decoration: underline;
+	}

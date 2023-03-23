@@ -2325,7 +2325,18 @@ input, select, textarea {
 			font-size: 1.65em;
 			margin: 0 0 1.5em 0;
 		}
-
+	.box.icon2 {
+		text-align: right;
+	}
+		.box.box.icon2 h2 {
+			font-size: 1em;
+			margin: 0em 2em 0em 0;
+		}
+	
+		.box.icon2 header > p {
+			font-size: 1.65em;
+			margin: 0 0 1.5em 0;
+		}
 	.box.feature {
 		text-align: center;
 		line-height: normal;
@@ -3283,3 +3294,60 @@ input, select, textarea {
 		font-weight: bold;
 		text-decoration: underline;
 	}
+
+
+/* 下拉按钮样式
+.dropbtn {
+    background-color: #035083;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: default;
+} */
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: 0em 0em 0em 0em;
+    background-color: #ffffff;
+    width: 90px;
+	height: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: #035083;
+    padding: 6px 10px;
+    text-decoration: none;
+	text-align: center;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {
+	color: #ffffff;
+	background-color:#035083;
+}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover a:before{
+    background-color: #035083;
+	color: #ffffff;
+}
+.dropdown:hover li{
+    top: -0.4em;
+}

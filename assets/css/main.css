@@ -3315,17 +3315,18 @@ input, select, textarea {
 /* 下拉内容 (默认隐藏) */
 .dropdown-content {
     display: none;
-    position: 0em 0em 0em 0em;
+    position: absolute;
     background-color: #ffffff;
     width: 90px;
 	height: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	right: 0;
 }
 
 /* 下拉菜单的链接 */
 .dropdown-content a {
     color: #035083;
-    padding: 6px 10px;
+    padding: 2px 10px;
     text-decoration: none;
 	text-align: center;
     display: block;

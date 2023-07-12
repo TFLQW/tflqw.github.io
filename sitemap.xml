@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://tiboy.eu/</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/index.html</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/Aboutme.html</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/P_by_year.html</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/P_by_type.html</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/pdf/CV_Boyang%20Ti-CN.pdf</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/pdf/CV_Boyang%20Ti-ENG.pdf</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/pdf/RAS_preprint.pdf</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/pdf/IROS_preprint.pdf</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/pdf/RCIM_preprint.pdf</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/pdf/IJARS_preprint.pdf</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://tiboy.eu/pdf/Access_preprint.pdf</loc>
+  <lastmod>2023-07-12T02:06:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

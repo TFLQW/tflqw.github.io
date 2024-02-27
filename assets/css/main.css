@@ -2799,6 +2799,17 @@ input, select, textarea {
 				font-size: 12pt;
 				line-height: 1.75em;
 			}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #ffffff;;
+				/* width: 90px;
+				height: 78px; */
+				width: 5em;
+				height: 4.0em;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				right: 0;
+			}
 
 	}
 
@@ -2886,7 +2897,7 @@ input, select, textarea {
 			#footer {
 				padding: 6em 0 6em 0;
 			}
-
+				/* 下拉内容 (默认隐藏) */
 	}
 
 /* Medium ipad*/
@@ -3316,6 +3327,22 @@ input, select, textarea {
 				border-left: 0;
 				padding-left: 0;
 				line-height: 1.75em;
+			}
+
+			.dropdown {
+				position: relative;
+				display: absolute;
+			}
+			.dropdown-content {
+				display: none;
+				position: relative;
+				background-color: #ffffff;;
+				/* width: 90px;
+				height: 78px; */
+				width: 5em;
+				height: 3.9em;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				right: 0;
 			}
 
 	}

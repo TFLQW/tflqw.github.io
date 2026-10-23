@@ -3371,7 +3371,7 @@ input, select, textarea {
 		text-decoration: underline;
 	}
 
-/* Google Scholar citation count badge */
+/* Google Scholar citation count badge (text only) */
 	.cite-count {
 		display: inline-block;
 		padding: 0 0.55em 0.05em 0.55em;
@@ -3382,12 +3382,6 @@ input, select, textarea {
 		font-size: 0.8em;
 		line-height: 1.6em;
 		white-space: nowrap;
-		text-decoration: none;
-	}
-
-	.cite-count:hover {
-		background: #25a7e4;
-		color: #ffffff;
-		text-decoration: none;
+		cursor: default;
 	}
 

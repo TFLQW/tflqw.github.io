@@ -38,8 +38,9 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### Google Scholar citation counts
 
-[P_by_year.html](./P_by_year.html) shows a `Cited by N` badge after each paper's
-*Cite* link. The numbers come from the public Google Scholar profile
+[P_by_year.html](./P_by_year.html) and [P_by_type.html](./P_by_type.html) show a
+`Cited by N` text badge after each paper's *Cite* link. The numbers come from the
+public Google Scholar profile
 [`lNvHzJEAAAAJ`](https://scholar.google.com/citations?user=lNvHzJEAAAAJ) and are
 refreshed twice a day by the
 [update-scholar-citations](./.github/workflows/update-scholar-citations.yml)

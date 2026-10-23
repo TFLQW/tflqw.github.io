@@ -29,12 +29,13 @@ jobs:
 
       - name: Commit changes
         run: |
-          if git diff --quiet -- P_by_year.html; then
+          PAGES="P_by_year.html P_by_type.html"
+          if git diff --quiet -- $PAGES; then
             echo "Citation counts are already up to date."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add P_by_year.html
+          git add $PAGES
           git commit -m "chore: update Google Scholar citation counts"
           git push

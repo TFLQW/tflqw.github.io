@@ -42,7 +42,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 `Cited by N` text badge after each paper's *Cite* link. The numbers come from the
 public Google Scholar profile
 [`lNvHzJEAAAAJ`](https://scholar.google.com/citations?user=lNvHzJEAAAAJ) and are
-refreshed twice a day by the
+refreshed daily at 08:00 (UTC+2) by the
 [update-scholar-citations](./.github/workflows/update-scholar-citations.yml)
 workflow, which runs
 [update_scholar_citations.py](./.github/scripts/update_scholar_citations.py) and
@@ -50,5 +50,5 @@ commits the change when a count moves.
 
 - Manual refresh: `python .github/scripts/update_scholar_citations.py`
 - Manual run in CI: Actions → *Update Google Scholar citation counts* → *Run workflow*
-- If Scholar is unreachable the workflow fails without touching the page, so the
-  published counts simply stay at their last known values.
+- If Scholar is unreachable, or rejects the GitHub Actions runner with HTTP 403,
+  the pages are left untouched and the next daily run retries automatically.

@@ -3,8 +3,8 @@
 
 Scrapes the citation counts from the public Google Scholar profile page and
 writes them into the existing ``class="cite-count"`` spans on P_by_year.html and
-P_by_type.html. Exits non-zero only when the profile cannot be read, so a
-transient Scholar outage never rewrites the pages.
+P_by_type.html. If Scholar blocks the GitHub Actions IP address, leaves the
+published counts unchanged so the scheduled workflow can retry the next day.
 """
 
 import html
@@ -46,6 +46,10 @@ TOKEN_RE = re.compile(
 CITED_BY_RE = re.compile(r"Cited by \d+")
 
 
+class ScholarAccessDeniedError(RuntimeError):
+    """Raised when Google Scholar rejects an automated request."""
+
+
 def normalize(text):
     text = html.unescape(re.sub(r"<[^>]+>", "", text))
     text = text.replace("\u2013", "-").replace("\u2014", "-").replace("\xa0", " ")
@@ -70,6 +74,10 @@ def scrape(url, attempts=3):
             if "gsc_a_tr" in page:
                 return page
             last_error = "response had no publication rows (captcha or API error)"
+        except urllib.error.HTTPError as exc:
+            if exc.code == 403:
+                raise ScholarAccessDeniedError("HTTP Error 403: Forbidden") from exc
+            last_error = str(exc)
         except (urllib.error.URLError, TimeoutError) as exc:
             last_error = str(exc)
         print(
@@ -85,6 +93,13 @@ def fetch_profile():
     url = PROFILE_URL.format(user=SCHOLAR_USER)
     try:
         return scrape(url)
+    except ScholarAccessDeniedError as exc:
+        print(
+            "Google Scholar denied this runner (%s); leaving citation counts "
+            "unchanged and retrying at the next scheduled run." % exc,
+            file=sys.stderr,
+        )
+        return None
     except RuntimeError as exc:
         raise SystemExit("Could not read the Google Scholar profile: %s" % exc)
 
@@ -137,7 +152,10 @@ def rewrite(page, counts):
 
 
 def main():
-    counts = parse_counts(fetch_profile())
+    profile = fetch_profile()
+    if profile is None:
+        return
+    counts = parse_counts(profile)
 
     for path in PAGES:
         page = path.read_text(encoding="utf-8")
